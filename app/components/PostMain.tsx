@@ -28,7 +28,7 @@ export default function PostMain({ post }: PostMainCompTypes) {
             <div id={`PostMain-${post.id}`} className="flex border-b py-6">
 
                 <div className="cursor-pointer">
-                    <img className="rounded-full max-h-[60px]" width="60" src={useCreateBucketUrl(post?.profile?.image)} />
+                    <img className="rounded-full max-h-[60px]" width="60" src="../" />
                 </div>
 
                 <div className="pl-3 w-full px-4">

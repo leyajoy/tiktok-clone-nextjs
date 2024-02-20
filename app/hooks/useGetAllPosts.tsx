@@ -1,5 +1,5 @@
 
-import { database, Query } from "@/libs/AppWriteClient"
+import { Query, database } from "@/libs/AppWriteClient";
 import useGetProfileByUserId from "./useGetProfileByUserId";
 
 const useGetAllPosts = async () => {
@@ -32,8 +32,10 @@ const useGetAllPosts = async () => {
         const result = await Promise.all(objPromises)
         return result
     } catch (error) {
+        console.warn(error);
+        
         throw error
     }
 }
 
-export default useGetAllPosts
+export default useGetAllPosts;
